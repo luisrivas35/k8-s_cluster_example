@@ -12,3 +12,8 @@ variable "instance_type" {
   description = "EC2 instance type"
   default     = "t3.small"
 }
+
+variable "key_name" {
+  default     = "clase_key"
+  description = "Name of the existing EC2 key pair to associate with the instances"
+}
