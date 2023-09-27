@@ -1,7 +1,7 @@
 tasks:
   - name: terraform
     before: |
-      source ./bin/create_tfrc_cred.sh
+      #source ./bin/create_tfrc_cred.sh
       source ./bin/install_terraform_cli.sh 
       source ./bin/add_tf_alias.sh
       source ~/.bash_profile
