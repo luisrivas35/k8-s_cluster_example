@@ -31,6 +31,9 @@ resource "aws_instance" "bastion_host" {
     sudo apt-get install -y curl wget unzip 
     sudo apt-get install -y git 
     sudo apt-get install python3 python3-pip -y
+    sudo apt-get install -y openssh-server
+    sudo systemctl start sshd
+    sudo systemctl enable sshd
   EOF
 }
 
@@ -51,6 +54,9 @@ resource "aws_instance" "instance1" {
     sudo apt-get install -y curl wget unzip 
     sudo apt-get install -y git 
     sudo apt-get install python3 python3-pip -y
+    sudo apt-get install -y openssh-server
+    sudo systemctl start sshd
+    sudo systemctl enable sshd
   EOF
 }
 
